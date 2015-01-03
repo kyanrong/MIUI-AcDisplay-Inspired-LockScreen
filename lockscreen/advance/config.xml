@@ -1,0 +1,49 @@
+<Config>
+	<Group text="Select style on Lockscreen">  
+		<NumberChoice text="Choose Lockscreen style" id="Lockscreen" default="0">
+			<Item text="No Lock" value="0"/>
+			<Item text="Pattern" value="1"/>
+			<Item text="PIN" value="2"/>
+		</NumberChoice>
+	</Group>
+
+	<Group text="Select color on Button">  
+		<NumberChoice text="Choose color" id="Color" default="0">
+			<Item text="Transparent" value="0"/>
+			<Item text="Orange" value="1"/>
+			<Item text="Red" value="2"/>
+			<Item text="Green" value="3"/>
+		</NumberChoice>
+	</Group>
+	<Group text="Select Avatar">  
+		<NumberChoice text="Choose your Avatar" id="Avatar" default="0">
+			<Item text="MIUI Unknown" value="0"/>
+			<Item text="MIUI Unknown 2" value="1"/>
+			<Item text="Me" value="2"/>
+			<Item text="Anonymous" value="3"/>
+			<Item text="Leon" value="4"/>
+			<Item text="Cat" value="5"/>
+			<Item text="Lion" value="6"/>
+			<Item text="Cheetah" value="7"/>
+			<Item text="Dog" value="8"/>
+			<Item text="Eagle" value="9"/>
+			<Item text="Owl" value="10"/>
+			<Item text="Mitu 1" value="11"/>
+			<Item text="Mitu 2" value="12"/>
+		</NumberChoice>
+	</Group>
+
+	<Group text="Select position on charging indicator">  
+		<NumberChoice text="Choose position on charging indicator" id="charge" default="0">
+			<Item text="Top" value="0"/>
+			<Item text="Bottom" value="1"/>
+		</NumberChoice>
+	</Group>
+	<Group text="Clock on Lockscreen">
+		<CheckBox text="Show or hide Clock" summary="Show Clock on Lockscreen" id="Clock" default="0"/>
+	</Group>
+
+	
+
+
+</Config>

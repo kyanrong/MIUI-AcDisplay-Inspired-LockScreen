@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lockscreen version="1.0" frameRate="60" displayDesktop="true">
+	<Wallpaper/>
+    
+    <!-- Time -->
+    <Time x="#screen_width/2" y="#screen_height/3" align="center" src="time.png" />
+    <DateTime x="#screen_width/2-25" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="E, dd MMM / " />
+    
+    <!-- Battery -->
+    <Text x="#screen_width/2-25+50" y="#screen_height/3+90" color="#FFFFFF" size="16" format="%d%%" paras="#battery_level" alpha="255" />
+    
+    <!-- Divider -->
+    <Image x="#screen_width/4-35" y="#screen_height/3+132" src="divider.png" />
+    
+    <!-- Unlocker -->
+    <Unlocker>
+        <StartPoint x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50">
+            <NormalState>
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
+            </NormalState>
+            <PressedState>
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
+            </PressedState>
+            <ReachedState>
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
+            </ReachedState>
+        </StartPoint>
+        
+        <EndPoint x="0" y="#screen_height/3+250" w="#screen_width" h="#screen_height">
+            
+        </EndPoint>
+    </Unlocker>
+    
+</Lockscreen>
