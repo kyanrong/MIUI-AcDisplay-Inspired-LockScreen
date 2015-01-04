@@ -3,7 +3,7 @@
 	<Wallpaper/>
     
     <!-- Time -->
-    <Time x="#screen_width/2" y="#screen_height/3" align="center" src="time.png" />
+    <Time x="#screen_width/2" y="#screen_height/3" align="center" src="time.png" visibility="not(#music_control.music_state)" />
     <DateTime x="#screen_width/2-25" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="E, dd MMM / " />
     
     <!-- Battery -->
@@ -15,19 +15,43 @@
     
     <!-- Unlocker -->
     <Unlocker>
-        <StartPoint x="#screen_width/2-20" y="#screen_height/3+155" w="60" h="60">
+        <StartPoint x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50">
             <NormalState>
-                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="60" h="60" src="avatar.png" />
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
             </NormalState>
             <PressedState>
-                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="60" h="60" src="avatar.png" />
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
             </PressedState>
             <ReachedState>
-                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="60" h="60" src="avatar.png" />
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
             </ReachedState>
         </StartPoint>
         
         <EndPoint x="0" y="#screen_height/3+250" w="#screen_width" h="#screen_height" />
     </Unlocker>
+    
+    <!-- Music Control -->
+    <MusicControl name="music_control" x="0" y="0" autoShow="true" visibility="false">
+        <!--<Image name="music_album_cover" x="0" y="0" alpha="150" align="center" />-->
+        <Text text="@music_control.title" x="#screen_width/2" y="#screen_height/3+10" w="290" marqueeSpeed="30" size="30" color="#FFFFFF" align="center" />
+        <Text text="@music_control.artist" x="#screen_width/2" y="#screen_height/3+50" w="290" marqueeSpeed="30" size="24" color="#FFFFFF" align="center" />
+        
+        <Button name="music_prev" x="#screen_width/2-150" y="#screen_height/3-60" w="50" h="50">
+            <Normal><Image src="music_previous_n.png" x="#screen_width/2-150" y="#screen_height/3-60" /></Normal>
+            <Pressed><Image src="music_previous_p.png" x="#screen_width/2-150" y="#screen_height/3-60" /></Pressed>
+        </Button>
+        <Button name="music_play" x="#screen_width/2-25" y="#screen_height/3-60" w="50" h="50">
+            <Normal><Image src="music_play_n.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Normal>
+            <Pressed><Image src="music_play_p.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Pressed>
+        </Button>
+        <Button name="music_pause" x="#screen_width/2-25" y="#screen_height/3-60" w="50" h="50">
+            <Normal><Image src="music_pause_n.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Normal>
+            <Pressed><Image src="music_pause_p.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Pressed>
+        </Button>
+        <Button name="music_next" x="#screen_width/2+100" y="#screen_height/3-60" w="50" h="50">
+            <Normal><Image src="music_next_n.png" x="#screen_width/2+100" y="#screen_height/3-60" /></Normal>
+            <Pressed><Image src="music_next_p.png" x="#screen_width/2+100" y="#screen_height/3-60" /></Pressed>
+        </Button>
+    </MusicControl>
     
 </Lockscreen>
