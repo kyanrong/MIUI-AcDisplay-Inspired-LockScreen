@@ -3,12 +3,12 @@
 	<Wallpaper/>
     
     <!-- Time -->
-    <Time x="#screen_width/2" y="#screen_height/3" align="center" src="time.png" visibility="not(#music_control.music_state)" />
-    <DateTime x="#screen_width/2-25" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="E, dd MMM / " />
+    <Time x="#screen_width/2" y="#screen_height/3" align="center" src="time.png" visibility="not(#music_control.visibility)" />
+    <DateTime x="#screen_width/2-5" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="E, dd MMM / " />
     
     <!-- Battery -->
-    <Text name="bat_level" x="#screen_width/2-25+50" y="#screen_height/3+90" color="#FFFFFF" size="16" format="%d%%" paras="#battery_level" alpha="255" />
-    <Image x="#screen_width/2-25+#bat_level.text_width+55" y="#screen_height/3+94" src="charging.png" category="Charging" />
+    <Text name="bat_level" x="#screen_width/2-5+50" y="#screen_height/3+90" color="#FFFFFF" size="16" format="%d%%" paras="#battery_level" alpha="255" />
+    <Image x="#screen_width/2-5+#bat_level.text_width+55" y="#screen_height/3+94" src="charging.png" category="Charging" />
     
     <!-- Divider -->
     <Image x="#screen_width/4-35" y="#screen_height/3+132" src="divider.png" />
@@ -36,21 +36,21 @@
         <Text text="@music_control.title" x="#screen_width/2" y="#screen_height/3+10" w="290" marqueeSpeed="30" size="30" color="#FFFFFF" align="center" />
         <Text text="@music_control.artist" x="#screen_width/2" y="#screen_height/3+50" w="290" marqueeSpeed="30" size="24" color="#FFFFFF" align="center" />
         
-        <Button name="music_prev" x="#screen_width/2-150" y="#screen_height/3-60" w="50" h="50">
-            <Normal><Image src="music_previous_n.png" x="#screen_width/2-150" y="#screen_height/3-60" /></Normal>
-            <Pressed><Image src="music_previous_p.png" x="#screen_width/2-150" y="#screen_height/3-60" /></Pressed>
+        <Button name="music_prev" x="#screen_width/2-150" y="#screen_height/3-45" w="50" h="50">
+            <Normal><Image src="music_previous_n.png" x="#screen_width/2-150" y="#screen_height/3-45" /></Normal>
+            <Pressed><Image src="music_previous_p.png" x="#screen_width/2-150" y="#screen_height/3-45" /></Pressed>
         </Button>
-        <Button name="music_play" x="#screen_width/2-25" y="#screen_height/3-60" w="50" h="50">
-            <Normal><Image src="music_play_n.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Normal>
-            <Pressed><Image src="music_play_p.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Pressed>
+        <Button name="music_play" x="#screen_width/2-7" y="#screen_height/3-45" w="50" h="50">
+            <Normal><Image src="music_play_n.png" x="#screen_width/2-7" y="#screen_height/3-45" /></Normal>
+            <Pressed><Image src="music_play_p.png" x="#screen_width/2-7" y="#screen_height/3-45" /></Pressed>
         </Button>
-        <Button name="music_pause" x="#screen_width/2-25" y="#screen_height/3-60" w="50" h="50">
-            <Normal><Image src="music_pause_n.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Normal>
-            <Pressed><Image src="music_pause_p.png" x="#screen_width/2-25" y="#screen_height/3-60" /></Pressed>
+        <Button name="music_pause" x="#screen_width/2-7" y="#screen_height/3-45" w="50" h="50">
+            <Normal><Image src="music_pause_n.png" x="#screen_width/2-7" y="#screen_height/3-45" /></Normal>
+            <Pressed><Image src="music_pause_p.png" x="#screen_width/2-7" y="#screen_height/3-45" /></Pressed>
         </Button>
-        <Button name="music_next" x="#screen_width/2+100" y="#screen_height/3-60" w="50" h="50">
-            <Normal><Image src="music_next_n.png" x="#screen_width/2+100" y="#screen_height/3-60" /></Normal>
-            <Pressed><Image src="music_next_p.png" x="#screen_width/2+100" y="#screen_height/3-60" /></Pressed>
+        <Button name="music_next" x="#screen_width/2+150" y="#screen_height/3-45" w="50" h="50">
+            <Normal><Image src="music_next_n.png" x="#screen_width/2+150" y="#screen_height/3-45" /></Normal>
+            <Pressed><Image src="music_next_p.png" x="#screen_width/2+150" y="#screen_height/3-45" /></Pressed>
         </Button>
     </MusicControl>
     
