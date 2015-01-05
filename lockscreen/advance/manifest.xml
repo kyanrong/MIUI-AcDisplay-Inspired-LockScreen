@@ -17,13 +17,13 @@
     <Unlocker>
         <StartPoint x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50">
             <NormalState>
-                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar_n.png" />
             </NormalState>
             <PressedState>
-                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar_n.png" />
             </PressedState>
             <ReachedState>
-                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar.png" />
+                <Image x="#screen_width/2-20" y="#screen_height/3+155" w="50" h="50" src="avatar_n.png" />
             </ReachedState>
         </StartPoint>
         

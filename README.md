@@ -9,7 +9,9 @@ It's my first time making a MIUI lock screen. I welcome constructive comments!
 *** currently only tested on HTC m7 and MIUI v5 ***
 <br><br>
 Todo: <br>
-- Add effects for buttons <br>
-- Add effect for unlocker to make it more intuitive <br>
 - Add 3rd party notifications (not sure if possible) <br>
-- music cover as music bg image<br>
+- music cover as music bg image <br>
+- make it customizable <br>
+<br><br>
+Credits: <br>
+Icons: Entypo
