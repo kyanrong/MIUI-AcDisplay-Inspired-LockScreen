@@ -4,11 +4,12 @@
     
     <!-- Time -->
     <Time x="#screen_width/2" y="#screen_height/3" align="center" src="time.png" visibility="not(#music_control.visibility)" />
-    <DateTime x="#screen_width/2-5" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="E, dd MMM / " />
+    <DateTime x="#screen_width/2-5" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="E, dd MMM / " visibility="not(#music_control.visibility)" />
+    <DateTime x="#screen_width/2" y="#screen_height/3+90" align="center" color="#FFFFFF" size="16" format="kk:mm" visibility="#music_control.visibility" />
     
     <!-- Battery -->
-    <Text name="bat_level" x="#screen_width/2-5+50" y="#screen_height/3+90" color="#FFFFFF" size="16" format="%d%%" paras="#battery_level" alpha="255" />
-    <Image x="#screen_width/2-5+#bat_level.text_width+55" y="#screen_height/3+94" src="charging.png" category="Charging" />
+    <Text name="bat_level" x="#screen_width/2-5+50" y="#screen_height/3+90" color="#FFFFFF" size="16" format="%d%%" paras="#battery_level" alpha="255" visibility="not(#music_control.visibility)"/>
+    <Image x="#screen_width/2-5+#bat_level.text_width+55" y="#screen_height/3+94" src="charging.png" category="Charging" visibility="not(#music_control.visibility)" />
     
     <!-- Divider -->
     <Image x="#screen_width/4-35" y="#screen_height/3+132" src="divider.png" />
