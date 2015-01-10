@@ -33,7 +33,7 @@
     
     <!-- Music Control -->
     <MusicControl name="music_control" x="0" y="0" autoShow="true" visibility="false">
-        <!--<Image name="music_album_cover" x="0" y="0" alpha="150" align="center" />-->
+        <Image name="music_album_cover" x="0" y="0" height="#screen_height" width="#screen_width" alpha="20" />
         <Text text="@music_control.title" x="#screen_width/2" y="#screen_height/3+10" w="290" marqueeSpeed="30" size="30" color="#FFFFFF" align="center" />
         <Text text="@music_control.artist" x="#screen_width/2" y="#screen_height/3+50" w="290" marqueeSpeed="30" size="24" color="#FFFFFF" align="center" />
         
